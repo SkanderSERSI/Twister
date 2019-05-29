@@ -1,0 +1,165 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/enregistrement.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="js/inscription.js"></script>
+<script src="js/login.js"></script>
+<script src="js/mainIndex.js"></script>
+<script src="js/deconnexion.js"></script>
+<title>Bienvenue sur Twister</title>
+</head>
+
+<body>
+
+
+	<!-- Haut de page -->
+	<header>
+		
+		
+		
+			<div id="header">
+				<div class="logo">
+				<a href="twitter.png"> <img src="twitter.png" height="80" width="80"alt="" title="Bienvenue sur Twister" />
+				</div>
+				
+				<div class ="form">
+					<form method="post" action="">
+						<input type="search" name="recherche"
+							placeholder="Tapez l'element de votre recherche"> <input
+							type="submit" value="Rechercher">
+					</form>
+				</div>
+
+				<div class="bton">
+				<a href="javascript:afficheL();"><img src="login.png" height="40" width="40" title="Connectez-vous"/></a> 
+				<a href="javascript:afficheE();"><img src="register.png" height="40" width="40" title="Inscrivez-vous"/></a>
+				<a id="button_logout" href="#"	onclick="logout(); return false;">Déconnexion</a>
+				</div>
+			</div>
+			<div id="mnu">
+				<div class="bar">
+				<nav class="menu-nav">
+					<ul>
+						<li class="btn">
+							<a href="Home.html">Mon profil</a>
+						</li>
+						<li class="btn">
+							<a href="Messages.html">Derniers messages</a>
+						</li>
+						<li class="btn">
+							<a href="options.html">Parametres</a>
+						</li>
+						<li class="btn">
+							<a href="contact.html"> Contact</a>
+						</li>
+					</ul>
+				</nav>
+				</div>
+			</div>
+	</header>
+
+	<div id="tout">
+	<div class="all">
+	<div class="register" id="enregistrement">
+	<FORM method="post" action="javascript:creation(this);">
+
+	<span id="firstName">Prénom obligatoire</span> <span id="lastName">Nom
+							obligatoire</span> <span id="usernameSignUp">Login obligatoire</span> <span
+							id="email">Email obligatoire</span> <span id="password1">Mot
+							de passe obligatoire</span> <span id="password2">Mot de passe de
+							confirmation obligatoire</span> <span id="passwordVerif">Les deux
+							mots de passe ne correspondent pas</span> <span id="login_tailleSignUp">La
+							taille du login doit être entre 6 et 20 caractères.</span> <span
+							id="login_existant">Veuillez choisir un autre login.</span> <span
+							id="deconnect_login">Vous etes deconnecté.</span> <span
+							id="mdp_tailleSignUp">La taille du mot de passe doit être
+							entre 6 et 15 caractères.
+	</span>
+	<p>
+	<label> Nom : </label>
+		<input type="text" name="nom" id="nom"/>
+	</p>
+	<p>
+	<label> Prenom : </label>
+		<input type="text" name="prenom" id="prenom"/>
+	</p>
+
+	<p>
+	<label> Login : </label>
+		<input type="text" name="login" id="login"/>
+	</p>
+
+	<p>
+	<label> E-mail: </label>
+		<input type="Email" name="email" id="mail"/>
+	</p>		
+	
+	<p>
+	<label> Mot de passe: </label>
+		<input type="password" name="pass" id="pass"/>
+	</p>
+
+	<p>
+	<label> Mot de passe: </label>
+		<input type="password" name="re_pass"/>
+	</p>
+
+	<INPUT type="submit" value="S'inscriire" class="env"/> 
+							
+	<INPUT type="reset" value="Annuler" class="ann"/>
+					
+							
+							
+	</FORM>
+
+	</div>
+
+
+<div class="login" id="session">
+<FORM method="post" action="javascript:connexion(this);">
+	<span id="login_obligatoire">Login obligatoire</span>
+	<span id="mdp_obligatoire">Mot de passe obligatoire</span>
+	<span id="deja_connecter">Vous êtes dêja connecter</span>
+	<span id="erreur_login">login n'est pas correcte</span>
+	<span id="erreur_mdp">mode de passe n'est pas correcte</span>
+	<span id="serveur_erreur">Oups une erreur inattendue s'est
+						produite ,Verifiez votre connection et reessayer</span>
+
+	<p>
+	<label> Login : </label>
+		<input type="text" name="loginc"/>
+	</p>
+	<p>
+	<label> Mot de passe : </label>
+		<input type="password" name="passc"/>
+	</p>
+	<INPUT type="submit" value="Se connecter"
+							class="env"> <INPUT type="reset" value="Annuler"
+							class="ann">
+	<p>
+	<a href="javascript:lostpass()">Mot de passe oublié ? </a></p>
+</FORM>
+</div>
+</div>
+</div>
+	<!-- Bas de page -->
+	<div id="foot">
+	<footer>
+		<div class="cpy">
+		<p>
+			<br> Copyright &copy; Kooci - Tous droits réservés<br /> 
+		</p>
+		</div>
+	</footer>
+	</div>
+
+</body>
+</html>

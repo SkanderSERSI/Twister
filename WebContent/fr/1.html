@@ -1,0 +1,73 @@
+<html>
+<div id="tout">
+	<div class="register">
+	<form method="post" action="javascript:creation(this);">
+
+	<span id="firstName">Prénom obligatoire</span> <span id="lastName">Nom
+							obligatoire</span> <span id="usernameSignUp">Login obligatoire</span> <span
+							id="email">Email obligatoire</span> <span id="password1">Mot
+							de passe obligatoire</span> <span id="password2">Mot de passe de
+							confirmation obligatoire</span> <span id="passwordVerif">Les deux
+							mots de passe ne correspondent pas</span> <span id="login_tailleSignUp">La
+							taille du login doit être entre 6 et 20 caractères.</span> <span
+							id="login_existant">Veuillez choisir un autre login.</span> <span
+							id="deconnect_login">Vous etes deconnecté.</span> <span
+							id="mdp_tailleSignUp">La taille du mot de passe doit être
+							entre 6 et 15 caractères.
+	</span>
+	<p>
+	<label> Nom : </label>
+		<input type="text" name="nom"/>
+	</p>
+	<p>
+	<label> Prenom : </label>
+		<input type="text" name="prenom"/>
+	</p></br>
+
+	<p>
+	<label> Login : </label>
+		<input type="text" name="login"/>
+	</p>
+
+	<p>
+	<label> E-mail: </label>
+		<input type="Email" name="mail"/>
+	</p>		
+	
+	<p>
+	<label> Mot de passe: </label>
+		<input type="password" name="pass"/>
+	</p>
+
+	<p>
+	<label> Mot de passe: </label>
+		<input type="password" name="re_pass"/>
+	</p>
+
+
+
+	</form>
+	</div>
+</div>
+
+<div class="login">
+<FORM method="post" action="javascript:connexion(this);">
+	<span id="login_obligatoire">Login obligatoire</span>
+	<span id="mdp_obligatoire">Mot de passe obligatoire</span>
+	<span id="deja_connecter">Vous êtes dêja connecter</span>
+	<span id="erreur_login">login n'est pas correcte</span>
+	<span id="erreur_mdp">mode de passe n'est pas correcte</span>
+	<span id="serveur_erreur">Oups une erreur inattendue s'est
+						produite ,Verifiez votre connection et reessayer</span>
+
+	<p>
+	<label> Login : </label>
+		<input type="text" name="login"/>
+	</p>
+	<p>
+	<label> Mot de passe : </label>
+		<input type="password" name="pass"/>
+	</p>
+	<p>
+	<a href="javascript:lostpass()">Mot de passe oublié ? </a></p>
+</html>

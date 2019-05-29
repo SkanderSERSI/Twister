@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"> 
+<web-app> 
+	<display-name>gr2_CHIKDENE_SERSI</display-name> 
+	
+	<servlet> 
+		<servlet-name>NewUserServlet</servlet-name> 
+		<servlet-class>servlet.NewUserServlet</servlet-class> 
+	</servlet> 
+	
+	 	<servlet-mapping> 
+		<servlet-name>NewUserServlet</servlet-name> 
+		<url-pattern>/NUS</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet> 
+		<servlet-name>LoginServlet</servlet-name> 
+		<servlet-class>servlet.LoginServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>LoginServlet</servlet-name> 
+		<url-pattern>/LS</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet> 
+		<servlet-name>AddFriendServlet</servlet-name> 
+		<servlet-class>servlet.AddFriendServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>AddFriendServlet</servlet-name> 
+		<url-pattern>/AFS</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet> 
+		<servlet-name>ListFriendServlet</servlet-name> 
+		<servlet-class>servlet.ListFriendServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>ListFriendServlet</servlet-name> 
+		<url-pattern>/LFS</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet> 
+		<servlet-name>AddMessageServlet</servlet-name> 
+		<servlet-class>servlet.AddMessageServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>AddMessageServlet</servlet-name> 
+		<url-pattern>/AMS</url-pattern> 
+	</servlet-mapping> 
+	
+	<servlet> 
+		<servlet-name>ListMessageServlet</servlet-name> 
+		<servlet-class>servlet.ListMessageServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>ListMessageServlet</servlet-name> 
+		<url-pattern>/list</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet> 
+		<servlet-name>RemoveMessageServlet</servlet-name> 
+		<servlet-class>servlet.RemoveMessageServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>RemoveMessageServlet</servlet-name> 
+		<url-pattern>/remove</url-pattern> 
+	</servlet-mapping> 
+	 
+	<servlet> 
+		<servlet-name>EditMessageServlet</servlet-name> 
+		<servlet-class>servlet.EditMessageServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>EditMessageServlet</servlet-name> 
+		<url-pattern>/edit</url-pattern> 
+	</servlet-mapping>  
+	<servlet> 
+		<servlet-name>DisconnectServlet</servlet-name> 
+		<servlet-class>servlet.LogoutServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>DisconnectServlet</servlet-name> 
+		<url-pattern>/logout</url-pattern> 
+	</servlet-mapping>
+	<servlet> 
+		<servlet-name>SearchServlet</servlet-name> 
+		<servlet-class>servlet.SeekFriendsServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>SearchServlet</servlet-name> 
+		<url-pattern>/SFS</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet> 
+		<servlet-name>GetLoginServlet</servlet-name> 
+		<servlet-class>servlet.GetLoginServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>GetLoginServlet</servlet-name> 
+		<url-pattern>/gL</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet> 
+		<servlet-name>GetIdServlet</servlet-name> 
+		<servlet-class>servlet.GetIdServlet</servlet-class> 
+	</servlet> 
+	<servlet-mapping> 
+		<servlet-name>GetIdServlet</servlet-name> 
+		<url-pattern>/gI</url-pattern> 
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RemoveFriendServlet</servlet-name> 
+		<servlet-class>servlet.RemoveFriendServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>RemoveFriendServlet</servlet-name> 
+		<url-pattern>/RFS</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddCommentServlet</servlet-name> 
+		<servlet-class>servlet.AddCommentServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>AddCommentServlet</servlet-name> 
+		<url-pattern>/ACS</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetCommentServlet</servlet-name> 
+		<servlet-class>servlet.GetCommentServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>GetCommentServlet</servlet-name> 
+		<url-pattern>/GC</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LFMServlet</servlet-name> 
+		<servlet-class>servlet.ListFMServlet</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>GKServlet</servlet-name> 
+		<url-pattern>/LFM</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GKServlet</servlet-name> 
+		<servlet-class>servlet.GetKeybyID</servlet-class> 
+	</servlet> 
+
+	<servlet-mapping> 
+		<servlet-name>GKServlet</servlet-name> 
+		<url-pattern>/gK</url-pattern> 
+	</servlet-mapping>
+</web-app>

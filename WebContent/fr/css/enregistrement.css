@@ -1,0 +1,102 @@
+.titre
+{
+	display:inline-block ;
+	text-align:center;
+	border:solid;
+
+}
+
+.tout
+{
+	margin:auto;
+	
+}
+.enr
+{
+	border:solid;
+	width:520px;
+	height:360px; 
+	margin:auto;
+}
+
+.np
+{
+	height:auto;
+	display:inline-block ;
+	text-align:center;
+	padding-left:40px; 
+	line-height:48px; 
+	padding-bottom:20px; 
+	vertical-align:top;
+}
+
+.att
+{
+	height:auto;
+	display:inline-block;
+	text-align:left;
+	padding-left:20px;
+	line-height:48px; 
+	vertical-align:top;
+}
+
+.form
+{
+	height:auto;
+	display:inline-block;
+	padding-left:30px;
+	line-height:20px; 
+	vertical-align:top;
+}
+
+.env
+{
+	margin-left:50px;
+}
+
+.ann
+{
+	margin-right:50px; 
+	float:right;
+}
+
+.titre2
+{
+	text-align:center;
+	border:solid;
+	margin-left:50px;
+}
+
+.log
+{
+	border:solid;
+	margin: auto;
+	margin-left:50px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#firstName, #lastName, #usernameSignUp, #email, 
+#password1, #password2, #passwordVerif, #mdp_tailleSignUp, 
+#login_tailleSignUp, #login_existant, #deconnect_login {
+	color : red;
+	font-size: 1.2em;
+	display: none;
+	margin-bottom: 5px;
+}
+
+#login_obligatoire,  #deja_connecter, #serveur_erreur, #erreur_mdp, #erreur_login, #mdp_obligatoire,
+#login_taille,  #mdp_taille, #erreur_login_mdp {
+	color : red; 
+	display: none;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+#enregistrement, #button_logout
+{
+	display:none;
+}
+

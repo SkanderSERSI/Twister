@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> Page de connexion </title>
+</head>
+<body>
+<h1>Ouvrir une session</h1>
+<form method=post action="cgi-bin/Connexion.pl">
+<table border=0>
+<tr><td>login</td><td><input type=text name="login"></td></tr>
+<tr><td>mot de passe</td><td><input type="password" name="pass"></td></tr>
+<TR><TD COLSPAN=2>
+<INPUT type="submit" value="Envoyer">
+</TD>
+<td> <a href="/passlost"> Mot de passe oublié ?</a>
+</TR>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

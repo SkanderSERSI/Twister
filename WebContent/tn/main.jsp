@@ -1,0 +1,195 @@
+<%@page import="java.util.List"%>
+<html>
+
+<head>
+		<%@page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-language" content="fr" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>Twinter</title>
+
+        <link rel="stylesheet" href="css/enregistrement.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>    
+        <script src="js/inscription.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/mainIndex.js"></script>
+        <script src="js/deconnexion.js"></script>
+</head>
+
+<body class="body">	
+
+<script type="text/javascript">
+        $(document).ready(function() {
+        	function go() {
+       <%
+            		String id = request.getParameter("id");
+                    String login = request.getParameter("login");
+            		String key = request.getParameter("key");
+            		String follows = request.getParameter("follows");
+            		if((id != null) && (login != null) && (key != null) && (follows != null)){
+            			out.println("main('" + id + "','" + login + "','" + key + "','" + follows + "');");
+            		} else {
+            			out.println("main();");
+                    }
+        %>            
+            }
+            $(go());
+        });		
+    
+	</script>
+	<header>
+		<h1>Twinter</h1>
+		<table>
+			<tr>
+				<td><a href="photo.jpg"> <img src="photo.png" alt=""
+						title="Twinter Bob : Cliquez pour agrandir" />
+				</a></td>
+				<td>
+					<form method="post" action="">
+						<input type="search" name="recherche"
+							placeholder="Tapez l'element de votre recherche"> <input
+							type="submit" value="Rechercher">
+					</form>
+				</td>
+				<td>
+				<div id="log_enr">
+				<a href="javascript:afficheL();">Login</a> 
+				<a href="javascript:afficheE();">Enregistrer</a> 
+				</div>
+				<div id="button_logout">
+                        Hi, <span id="connected_name"></span>
+                        <a href="#" onclick="logout(); return false;">Déconnexion</a>
+                </div>
+				
+		</table>
+	</header>
+        <div id="main_content1">
+                <div id="menu">
+                  	<div id="menu1" class="menu1">
+                        <a href="javascript:profile();"></a>
+                        <a href="javascript:profile();">Profile</a>
+                    </div>
+                    <div id="menu2" class="menu2">
+                        <a href="javascript:talkies();"></a>
+                        <a href="javascript:talkies();">My Talkie's</a>
+                    </div>
+                    <div id="menu3" class="menu3">
+                   	    <a href="javascript:chargerlistesFriends(this);"></a>
+                        <a href="javascript:chargerlistesFriends(this);">Number of friends : </a><span id="number_amis"></span>
+                        <span id="zone_stats"></span>
+                    </div>
+                </div>
+                <div id="messages_contenu1">
+                    <div id="message_box">
+                        <form class="message_form" method="get" action="javascript:envoiMessage(this);">
+                            <textarea class="box" name='message' id='message'></textarea>
+                            <input type="submit" value="message" id="message_button" />
+                        </form>
+                        <hr>
+                    </div>
+                    <h3 id="msgTilte">La liste de mes messages </h3>
+                    <div id="insert_messages">
+						
+                    </div>
+                </div>
+         </div>
+         <TABLE class="tout">
+		<tr>
+			<TD id="enregistrement">
+				<H1 class="titre">Enregistrement</h1>
+				<FORM method="post" action="javascript:creation(this);">
+
+					<div class="enr">
+						<span id="firstName">Prénom obligatoire</span> <span id="lastName">Nom
+							obligatoire</span> <span id="usernameSignUp">Login obligatoire</span> <span
+							id="email">Email obligatoire</span> <span id="password1">Mot
+							de passe obligatoire</span> <span id="password2">Mot de passe de
+							confirmation obligatoire</span> <span id="passwordVerif">Les deux
+							mots de passe ne correspondent pas</span> <span id="login_tailleSignUp">La
+							taille du login doit être entre 6 et 20 caractères.</span> <span
+							id="login_existant">Veuillez choisir un autre login.</span> <span
+							id="deconnect_login">Vous etes deconnecté.</span> <span
+							id="mdp_tailleSignUp">La taille du mot de passe doit être
+							entre 6 et 15 caractères.</span>
+						<div class="np">
+							<Label for="prenom">Prénom</label> <br /> <INPUT type="text"
+								id="prenom" name="prenom" placeholder="Koceila">
+						</div>
+
+						<div class="np">
+							<Label for="nom">Nom</label><br /> <INPUT type="text" id="nom"
+								name="nom" placeholder="Chikdene">
+						</div>
+
+						<br />
+						<div class="att">
+							<Label>Login</label><br /> <Label>Email</label><br /> <Label>Mot
+								de passe</label><br /> <Label>Retapez</label><br />
+						</div>
+
+						<div class="form">
+							<INPUT type="text" name="login" placeholder="Kooci"
+								style="width: 300"><br /> <br /> <INPUT type="email"
+								name="email" placeholder="koceila@hotmail.fr" style="width: 300"><br />
+							<br /> <INPUT type="password" name="pass"
+								placeholder="Mot de passe" style="width: 300"><br /> <br />
+							<INPUT type="password" name="re_pass" placeholder="Mot de passe"
+								style="width: 300"><br /> <br />
+						</div>
+
+						<br /> <br /> <INPUT type="submit" value="Enregistrer"
+							class="env"> <INPUT type="submit" value="Annuler"
+							class="ann">
+
+					</div>
+				</FORM>
+			</td>
+			<td id="session">
+				<H1 class="titre2">Ouvrir une session</h1>
+				<FORM method="post" action="javascript:connexion(this);">
+					<div id="login_obligatoire">Login obligatoire</div>
+					<div id="mdp_obligatoire">Mot de passe obligatoire</div>
+					<div id="deja_connecter">Vous êtes dêja connecter</div>
+					<div id="erreur_login">login n'est pas correcte</div>
+					<div id="erreur_mdp">mode de passe n'est pas correcte</div>
+					<div id="serveur_erreur">Oups une erreur inattendue s'est
+						produite ,Verifiez votre connection et reessayer</div>
+					<TABLE class="log">
+						<TR>
+							<TD>Login</TD>
+							<TD><INPUT type="text" name="loginc"
+								placeholder="Nom d'utilisateur" autofocus></TD>
+						</TR>
+
+						<TR>
+							<TD>Mot de Passe</TD>
+							<TD><INPUT type="password" name="passc"
+								placeholder="Mot de passe"></TD>
+						</TR>
+
+						<TR>
+							<TD rowspan=2><INPUT type="submit" value="Connexion"></TD>
+							<TD rowspan=1><A href="">Mot de passe oublié ?</A></TD>
+						</TR>
+
+						<TR>
+							<TD rowspan=1><A href="">Pas encore inscrit ?</A></TD>
+						</TR>
+
+					</TABLE>
+				</FORM>
+			</TD>
+		</tr>
+	</TABLE>
+	<footer>
+		<p>
+			Copyright Kooci - Tous droits réservés<br /> <a href="#">Me
+				contacter !</a>
+		</p>
+	</footer>
+</body>
+</html>

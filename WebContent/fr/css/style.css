@@ -1,0 +1,137 @@
+@CHARSET "ISO-8859-1";
+
+
+nav.menu-nav ul li.btn{
+	list-style-type:none;
+	display:inline-block;
+	
+}
+
+div#header div{
+	display:inline-block;
+	padding-left: 200px;
+}
+div#header div.logo{
+
+}
+div#mnu div{
+	display:inline-block;
+	padding-left: 400px;
+}
+div#form1{
+	display:inline-block;
+	vertical-align: top;
+}
+div#header div.bton{
+	vertical-align: top;
+}
+
+div#profil div{
+	display:inline-block;
+	padding-left:10%;
+}
+div#add_msg{
+	display:inline-block;
+	vertical-allign:top;
+}
+div#msg{
+	display:inline-block;
+	vertical-allign:bottom;
+	width:20%;
+	height: 20%;
+	font-family:verdana;
+	padding-top: 10px;
+	padding-left:10px;
+	margin-left: 10%;
+	margin-top: 5%;
+}
+div#msg div.em{
+	display:inline-block;
+	vertical-allign:top;
+}
+div#tout div.register{
+	width:20%;
+	height: 55%;
+	padding-top: 10px;
+	padding-left:35px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 8px 8px 12px black;
+	margin-left: 450px;
+	margin-top: 35px;
+}
+
+div#tout div.login{
+	width:20%;
+	height: 30%;
+	padding-top: 10px;
+	padding-left:35px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 8px 8px 12px black;
+	margin-left: 450px;
+	margin-top: 35px;
+}
+label{
+	display: block;
+	font-family:verdana;
+	font-size: 12px;
+    width: 100px;
+
+    float: left;
+}
+
+div#foot div{
+	display:inline-block;
+}
+
+div#foot div.cpy p{
+	padding-top:90px;
+	padding-left: 500px;
+	vertical-align: :top;
+	color:white;
+	font-family: Arial;
+	font-weight:normal;
+	font-style:italic;
+}
+div#header div.logo img{
+	box-shadow: 8px 8px 12px black;
+
+}
+nav.menu-nav ul li.btn a{
+	color:white;
+	background-color:red;
+	text-decoration:none;
+	padding:10px;
+	font-family:Calibri;
+	border-radius: 10px;
+	box-shadow: 8px 8px 12px black;
+}
+nav.menu-nav ul li.btn:hover a{
+	color:red;
+	background-color:white;
+	transition:0.3s all;
+}
+body{
+	
+	background-image: url("../twister.jpg");
+	background-repeat:repeat;
+}
+
+footer{
+	display:block;
+	margin-top: 100px;
+	background-color: red;
+	height: 25%;
+	border-radius: 10px;
+	box-shadow: 1px 1px 12px black;
+	
+}
+.al{
+	color:red;
+}
+header{
+	
+
+}
+#div
